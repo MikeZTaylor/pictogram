@@ -1,13 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300');
 
 body {  
   background-color: #fafafa;
-  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-brand {
   a {
+  	font-family: 'Julius Sans One', sans-serif;
     color: #000;
   }
 }
