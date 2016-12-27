@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :authenticate_user!
 	before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 	def index
@@ -11,7 +12,7 @@ class PostsController < ApplicationController
 	end
 	def create
 		if @post = Post.create(post_params)
-			flash[:success] = "Your have successfully created a post!"
+			flash[:success] = "You have successfully created a post!"
 			redirect_to posts_path
 		else
 			flash.now[:alert] = "Woops!, your post couldn't be created! Please recheck the form to make sure all fields were inputted."

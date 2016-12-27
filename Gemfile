@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+# Use Devise for authentication
+gem 'devise'
 # Use paperclip for image upload functionailty
 gem 'paperclip', '~> 4.2'
 # use simple forms for forms
