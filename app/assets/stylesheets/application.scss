@@ -2,8 +2,15 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300');
 
+$borderColour: #eeefef;
+$bgColour: #fff;
+$bodyBG: #fafafa;
+$navBarText: #7F7F7F;
+$PostHead: #646464;
+
+
 body {  
-  background-color: #fafafa;
+  background-color: $bodyBG;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,10 +26,10 @@ body {
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: $bgColour;
   height: 60px;
   .navbar-nav li a {
-    color: #7F7F7F;
+    color: $navBarText;
   }
 }
 
@@ -39,8 +46,8 @@ body {
 }
 
 .post {
-  background-color: #fff;
-  border-color: #eeefef;
+  background-color: $bgColour;
+  border-color: $borderColour;
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
@@ -50,7 +57,7 @@ body {
 .post-head {
   height: 64px;
   padding: 14px 20px;
-  color: #646464;
+  color: $PostHead;
   font-size: 20px;
   line-height: 18px;
   .thumbnail {}
@@ -60,8 +67,8 @@ body {
 }
 
 .image {
-  border-bottom: 1px solid #eeefef;
-  border-top: 1px solid #eeefef;
+  border-bottom: 1px solid $borderColour;
+  border-top: 1px solid $borderColour;
 }
 
 .caption {
@@ -75,9 +82,9 @@ body {
 .form-wrapper {
   width: 60%;
   margin: 20px auto;
-  background-color: #eeefef;
+  background-color: $borderColour;
   padding: 40px;
-  border: 1px solid #eeefef;
+  border: 1px solid $borderColour;
   border-radius: 3px;
 }
 
