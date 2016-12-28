@@ -5,6 +5,6 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable
-  validates :user_name, presence: true, length: { minimum: 6,
+  validates :user_name, presence: true, length: { minimum: 4,
   	maximum: 20 }
   end
