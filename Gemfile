@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use kaminari for pagination
+gem 'kaminari', '~> 0.16.3'
 # Use Devise for authentication
 gem 'devise'
 # Use paperclip for image upload functionailty
@@ -27,6 +29,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

@@ -1,7 +1,10 @@
 <div id="comment">
-  <div class="user-name">
+<div class="user-name">
+  <% if comment.user %>
     <%= comment.user.user_name %>
-  </div>
+  <% end %>
+</div>
+<div class="comment-content"></div>
   <div class="comment-content">
     <%= comment.content %>
   </div>
