@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 	def index
 		@posts = Post.all.order('created_at DESC').page params[:page]
 	end
-	def show 
+	def show
 	end
 	def new
 		@post = current_user.posts.build
@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
 		if @post.save
 			flash[:success] = "You have successfully created a post!"
-			redirect_to posts_path
+			redirect_to root_path
 		else
 			flash.now[:alert] = "Woops!, your post couldn't be created! Please recheck the form to make sure all fields were inputted."
 			render :new
@@ -27,7 +27,7 @@ class PostsController < ApplicationController
 	def update
 		if @post.update(post_params)
 			flash[:success] = "You have successfully updated the post."
-			redirect_to posts_path
+			redirect_to root_path
 		else
 			flash.now[:alert] = "Update failed. recheck the form to make sure all fields were inputted."
 			render :edit
