@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Use acts_as_votable to like comments
+gem 'acts_as_votable', '~> 0.10.0'  
 # Use kaminari for pagination
 gem 'kaminari', '~> 0.16.3'
 # Use Devise for authentication
