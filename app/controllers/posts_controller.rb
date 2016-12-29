@@ -39,10 +39,10 @@ class PostsController < ApplicationController
 	end
 	def like  
 		if @post.liked_by current_user
-			respond_to do |format|
+			respond_to do |format|  
 				format.html { redirect_to :back }
 				format.js
-			end
+			end  
 		end
 	end  
 

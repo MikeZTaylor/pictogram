@@ -10,6 +10,11 @@ module PostsHelper
     'glyphicon-heart-empty'
   end
 
+  def liked_post(post)  
+    return 'glyphicon-heart' if current_user.voted_for? post
+    'glyphicon-heart-empty'
+  end
+
   private
 
   def list_likers(votes)
