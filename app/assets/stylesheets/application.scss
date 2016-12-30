@@ -8,6 +8,14 @@ $bodyBG: #fafafa;
 $navBarText: #7F7F7F;
 $PostHead: #646464;
 $CommentName: #7F7F7F;
+$PostColour: #535353;
+$LoadMore: #747474;
+$LoadMoreBorder: #CCCCCC;
+$moreCommnets: #A5A7AA;
+$black: #000;
+$edit:#818488;
+$likeHeart: #FF677CFF;
+$likeHeartOnHOver: #EB677CFF;
 
 html {  
   height: 100%;
@@ -19,43 +27,18 @@ body {
   height: 100%;
 }
 
-.registration-bg {
-  padding-top: 6em;
-  height: 100%;
-  background-image: image-url('flamingo.jpg');
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+a {
+  color: $LoadMore;
+  text-decoration: none;
 }
 
-.log-in{
-  margin-left: auto;
-  margin-right: auto;
-  text-align:center;
-  border: none;
+a:hover, a:focus {
+  color: $black;
+  text-decoration: underline;
 }
 
-.login-bg {
-  padding-top: 6em;
-  height: 100%;
-  background-image: image-url('deer.jpg');
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-.panel {
-  border-radius: 8px;
-}
-
-.panel-heading{
-  h1 {
-    text-align: center;
-  }
-}
-
+/*NAVIGATION*/
 .navbar {
   margin-bottom: 0px;
 }
@@ -64,13 +47,13 @@ body {
   margin-bottom: 0px;
 }
 
-
 .navbar-brand {
   a {
     font-family: 'Julius Sans One', sans-serif;
     color: #000;
   }
 }
+
 .navbar-brand>img {
   height: 100%;
   margin-top: -18px;
@@ -89,15 +72,8 @@ body {
   margin: 0 auto;
 }
 
-#image-preview {
-  margin: 0px auto;
-}
 
-#post_image {
-  padding: 1em;
-  margin: 0px auto;
-}
-
+/*POSTS*/
 .posts-wrapper {
   padding-top: 40px;
   margin: 0 auto;
@@ -120,7 +96,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 24px;
-    color: #125688;
+    color: $PostColour;
     font-size: 15px;
     line-height: 18px;
     .user-name, .time-ago {
@@ -163,9 +139,10 @@ body {
     }
     .delete-comment {
       float: right;
-      color: #515151;
+      color: $CommentName;
     }
   }
+
   margin-bottom: 7px;
   padding-top: 24px;
   padding-left: 24px;
@@ -209,41 +186,47 @@ body {
   margin-bottom: 40px;
 }
 
-#paginator {
-  color: #4090DB;
-  height: 120px;
-  width: 120px;
-  margin: 60px auto 40px;
-  position: relative;
-  display: table;
-  border: 2px solid #4090DB;
-  border-radius: 50%;
-  :hover {
-    border: 1px solid #2D6DA8;
-    border-radius: 50%;
+
+/*DEVISE - LOGIN, SIGNUP*/
+.registration-bg {
+  padding-top: 6em;
+  height: 100%;
+  background-image: image-url('flamingo.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.log-in{
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  text-align:center;
+}
+
+.login-bg {
+  padding-top: 6em;
+  height: 100%;
+  background-image: image-url('deer.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading{
+  h1 {
+    text-align: center;
   }
 }
 
-#load_more {
-  display: table-cell;
-  font-size: 12px;
-  padding: 0px 9px;
-  vertical-align: middle;
-  text-decoration: none;
-  a :hover {
-    color: #2D6DA8;
-  }
-}
 
-.comments {
-  .paginator {
-    margin: 0.5em;
-    .more-comments {
-      color: #A5A7AA;
-    }
-  }
-}
-
+/*PROFILE*/
 #user_avatar {
   margin: 35px auto;
 }
@@ -267,8 +250,8 @@ body {
 }
 
 .edit-button {
-  border-color: #818488;
-  color: #818488;
+  border-color: $edit;
+  color: $edit;
   margin-left: 20px;
 }
 
@@ -276,6 +259,18 @@ body {
   margin-top: 20px;
 }
 
+
+#image-preview {
+  margin: 0px auto;
+}
+
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
+}
+
+
+/*LIKES*/
 .likes {
   margin-top: 20px;
   margin-bottom: 7px;
@@ -283,10 +278,46 @@ body {
 
 .like {
   text-decoration: none;
-  color: #FF677CFF;
+  color: $likeHeart;
 }
 
 .like-button a:hover, a:focus {
   text-decoration: none;
-  color: FF677CFF;
+  color: $likeHeartOnHOver;
+}
+
+/*PAGINATOR*/
+#paginator {
+  color: $LoadMore;
+  height: 120px;
+  width: 120px;
+  margin: 60px auto 40px;
+  position: relative;
+  display: table;
+  border: 2px solid $LoadMore;
+  border-radius: 50%;
+  :hover {
+    border: 1px solid $LoadMore;
+    border-radius: 50%;
+  }
+}
+
+#load_more {
+  display: table-cell;
+  font-size: 12px;
+  padding: 0px 9px;
+  vertical-align: middle;
+  text-decoration: none;
+  a :hover {
+    color: $LoadMore;
+  }
+}
+
+.comments {
+  .paginator {
+    margin: 0.5em;
+    .more-comments {
+      color: $moreCommnets;
+    }
+  }
 }
