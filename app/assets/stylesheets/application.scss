@@ -72,6 +72,23 @@ a:hover, a:focus {
   margin: 0 auto;
 }
 
+.notification-dropdown {
+  margin-top: 10px;
+  button {
+    border: none;
+  }
+}
+
+.notification-index-list {
+  margin-top: 5em;
+  list-style: none;
+  li {
+    margin-top: 1em;
+    background-color: white;
+    padding: 1em;
+  }
+}
+
 
 /*POSTS*/
 .posts-wrapper {
