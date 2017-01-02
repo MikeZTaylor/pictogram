@@ -1,24 +1,12 @@
-# README
+# PICTOGRAM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The following application is an instagram clone built using ruby on rails, and is a student project for the fourth year web server programming module for Multimedia Application development at the Waterford Institute of Technology.The student is using DigitalOcean for the hosting, link to web application http://178.62.123.29/
 
-Things you may want to cover:
+---
 
-* Ruby version
+* Ruby version: 2.3.0
 
-* System dependencies
+* Ruby on Rails version: 5.0.1
 
-* Configuration
+* Database: sqlite (local) postgreSQL (deployment)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
